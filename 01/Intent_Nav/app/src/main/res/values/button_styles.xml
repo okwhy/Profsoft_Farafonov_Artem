@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <style name="Button.Nav.Style" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/button_background_color</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Button.Corners</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textStyle"> bold</item>
+       <item name="android:textSize">20sp</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.Button.Corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+</resources>
