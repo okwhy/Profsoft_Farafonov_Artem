@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LayoutDrawing" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/bg_grey</item>
+        <item name="toolbarStyle">@style/Widget.Toolbar.Custom</item>
+        <item name="materialButtonStyle">@style/Button.Edit.Style</item>
+    </style>
+    <style name="Theme.LayoutDrawing" parent="Base.Theme.LayoutDrawing" />
+
+</resources>

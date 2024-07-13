@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextCustomMedium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+    <style name="TextCustomSmall">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/profile_text</item>
+    </style>
+    <style name="TextCustomProfileCardName">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+    <style name="TextCustomProfileCardDate">
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+</resources>

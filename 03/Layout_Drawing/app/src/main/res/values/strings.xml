@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Layout Drawing</string>
+    <string name="appbar_main_text">Профиль</string>
+    <string name="edit_profile">Редактировать профиль</string>
+    <string name="name_placeholder">Иван</string>
+    <string name="surname_placeholder">Иванов</string>
+    <string name="lastname_placeholder">Иванович</string>
+    <string name="birthday_text">Дата рождения:</string>
+    <string name="birthday_placeholder">01.01.2001</string>
+    <string name="placeholder_text">placeholder</string>
+    <string name="aboutme_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="aboutme_text">О себе</string>
+    <string name="city_placeholder">Саратов</string>
+    <string name="city_text">Город</string>
+</resources>

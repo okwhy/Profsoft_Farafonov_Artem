@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ToolbarTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/text_size_tb</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Widget.Toolbar.Custom" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleTextAppearance">@style/ToolbarTitleTextAppearance</item>
+        <item name="android:background">@color/bg_grey</item>
+        <item name="navigationIcon">@drawable/ic_arrow_back_24</item>
+    </style>
+</resources>
