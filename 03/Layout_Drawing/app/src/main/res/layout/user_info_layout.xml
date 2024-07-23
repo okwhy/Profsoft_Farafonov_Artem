@@ -1,61 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    >
+    android:orientation="vertical"
+    android:paddingStart="@dimen/margin_main_profile"
+    android:paddingTop="12dp"
+    android:paddingEnd="@dimen/margin_main_profile"
+    android:paddingBottom="12dp">
 
-    <TextView
-        android:id="@+id/name_text"
-        style="@style/TextCustomProfileCardName"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/name_placeholder"
-        app:layout_constraintStart_toStartOf="@+id/surname_text"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/surname_text"
-        style="@style/TextCustomProfileCardName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
         android:layout_marginBottom="6dp"
-        android:text="@string/surname_placeholder"
-        app:layout_constraintBottom_toTopOf="@+id/lastname_text"
-        app:layout_constraintStart_toStartOf="@+id/lastname_text"
-        app:layout_constraintTop_toBottomOf="@+id/name_text" />
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_view_name_text"
+            style="@style/TextCustomProfileCardName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/name_placeholder" />
+
+        <TextView
+            android:id="@+id/text_view_birthday_text"
+            style="@style/TextCustomProfileCardDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/birthday_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_view_surname_text"
+            style="@style/TextCustomProfileCardName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/surname_placeholder" />
+
+        <TextView
+            android:id="@+id/text_view_birthday_value"
+            style="@style/TextCustomProfileCardDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/birthday_placeholder" />
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/lastname_text"
+        android:id="@+id/text_view_astname_text"
         style="@style/TextCustomProfileCardName"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_main_profile"
-        android:layout_marginBottom="12dp"
-        android:text="@string/lastname_placeholder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginBottom="6dp"
+        android:text="@string/lastname_placeholder" />
 
-    <TextView
-        android:id="@+id/birthday_text"
-        style="@style/TextCustomProfileCardDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="@dimen/margin_main_profile"
-        android:text="@string/birthday_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/birthday_value"
-        style="@style/TextCustomProfileCardDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:text="@string/birthday_placeholder"
-        app:layout_constraintStart_toStartOf="@+id/birthday_text"
-        app:layout_constraintTop_toBottomOf="@+id/birthday_text" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

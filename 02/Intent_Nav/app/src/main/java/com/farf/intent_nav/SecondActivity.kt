@@ -31,15 +31,5 @@ class SecondActivity : AppCompatActivity() {
                 show()
             }
         }
-        val button=binding.buttonNotify
-        val outValue = TypedValue()
-        button.context.theme.resolveAttribute(android.R.attr.buttonStyle, outValue, true)
-        Log.d("ButtonStyleCheck", button.toString())
-        if (outValue.resourceId != 0) {
-            val buttonStyleName = resources.getResourceEntryName(outValue.resourceId)
-            Log.d("ButtonStyleCheck", "Button style is: $buttonStyleName")
-        } else {
-            Log.d("ButtonStyleCheck", "Button style not found")
-        }
     }
 }

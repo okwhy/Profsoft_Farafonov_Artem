@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/bg_grey">
+    android:background="@color/bg_grey"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/margin_main_profile"
+    android:paddingTop="@dimen/margin_main_profile"
+    android:paddingEnd="24dp"
+    android:paddingBottom="@dimen/margin_main_profile">
+
+    <ImageView
+        android:id="@+id/image_view_profile_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/margin_main_profile"
+        android:contentDescription="@string/placeholder_text"
+        android:src="@drawable/image_placeholder" />
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/material_card_view_user_info"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_main_profile"
-        android:layout_marginTop="@dimen/margin_main_profile"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="@dimen/margin_main_profile"
+        android:layout_weight="1"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/profile_pic"
-        app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="@android:color/transparent"
         app:strokeWidth="0dp">
 
@@ -27,15 +35,4 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.card.MaterialCardView>
-
-    <ImageView
-        android:id="@+id/profile_pic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_main_profile"
-        android:contentDescription="@string/placeholder_text"
-        android:src="@drawable/image_placeholder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

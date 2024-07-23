@@ -9,7 +9,6 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,11 +19,11 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="@dimen/layout_height_tb"
-            app:title="@string/appbar_main_text"/>
+            app:title="@string/appbar_main_text" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <Button
-        android:id="@+id/editButton"
+        android:id="@+id/button_edit_profile"
         android:layout_width="0dp"
         android:layout_height="@dimen/height_btn"
         android:layout_marginStart="16dp"
@@ -46,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
 
     <TextView
-        android:id="@+id/city_text"
+        android:id="@+id/textview_city_text"
         style="@style/TextCustomSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,27 +56,27 @@
         app:layout_constraintTop_toBottomOf="@id/profile_overview" />
 
     <TextView
-        android:id="@+id/city_value"
+        android:id="@+id/textview_city_value"
         style="@style/TextCustomMedium"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/city_placeholder"
-        app:layout_constraintStart_toStartOf="@+id/city_text"
-        app:layout_constraintTop_toBottomOf="@+id/city_text" />
+        app:layout_constraintStart_toStartOf="@+id/textview_city_text"
+        app:layout_constraintTop_toBottomOf="@+id/textview_city_text" />
 
     <TextView
-        android:id="@+id/aboutme_text"
+        android:id="@+id/textview_aboutme_text"
         style="@style/TextCustomSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_main_profile"
         android:text="@string/aboutme_text"
-        app:layout_constraintStart_toStartOf="@+id/city_value"
-        app:layout_constraintTop_toBottomOf="@+id/city_value" />
+        app:layout_constraintStart_toStartOf="@+id/textview_city_value"
+        app:layout_constraintTop_toBottomOf="@+id/textview_city_value" />
 
     <TextView
-        android:id="@+id/aboutme_value"
+        android:id="@+id/textview_aboutme_value"
         style="@style/TextCustomMedium"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -85,8 +84,8 @@
         android:layout_marginEnd="16dp"
         android:text="@string/aboutme_placeholder"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/aboutme_text"
-        app:layout_constraintTop_toBottomOf="@+id/aboutme_text" />
+        app:layout_constraintStart_toStartOf="@+id/textview_aboutme_text"
+        app:layout_constraintTop_toBottomOf="@+id/textview_aboutme_text" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
