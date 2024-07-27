@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Networking</string>
+    <string name="toolbar_text">Погода</string>
+    <string name="city_name_placeholder">City Name</string>
+    <string name="current_temperature_placeholder">Current Temperature</string>
+    <string name="feels_like_temperature_description_placeholder">Feels like (temperature), (description)</string>
+    <string name="min_temperature_max_temperature">min: (temperature), max: (temperature)</string>
+    <string name="pressure_value_placeholder">pressure: (value)</string>
+    <string name="humidity_percentage">humidity: (percentage)</string>
+    <string name="visibility_km_placeholder">visibility: (km)</string>
+    <string name="wind_speed_value_placeholder">wind speed: (value)</string>
+    <string name="gust_value_placeholder">gust: (value)</string>
+    <string name="direction_value">direction: (value)</string>
+</resources>
